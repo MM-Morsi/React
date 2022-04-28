@@ -1,0 +1,17 @@
+node v 8 or higher 
+npm 5.6 or higher 
+_______________________
+npx create-react-app name
+NOT NPM --> NPX !!
+_______________________
+npm start
+
+npm run build 
+
+npm test
+
+npm run eject 
+_______________________
+generating a project using npx create-react-app
+* create  package.json 
+* 
