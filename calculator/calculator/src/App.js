@@ -12,29 +12,29 @@ const ACTION = {
 // break action to type and payload 
 // spreading out operator ...state 
 function reducer(state, { type, payload }) {
-  switch (type) {
-    case: ACTION.ADD_DIGIT:
-      return {}
-    case: ACTION.CLEAR:
-      return {
-        ...state,
-      }
+  // switch (type) {
+  //   case: ACTION.ADD_DIGIT:
+  //     return {}
+  //   case: ACTION.CLEAR:
+  //     return {
+  //       ...state,
+  //     }
 
-    case: ACTION.DELETE_DIGIT:
-      return {
-        ...state,
-      }
+  //   case: ACTION.DELETE_DIGIT:
+  //     return {
+  //       ...state,
+  //     }
 
-    case: ACTION.CHOOSE_OPERATION:
-      return {
-        ...state,
-      }
+  //   case: ACTION.CHOOSE_OPERATION:
+  //     return {
+  //       ...state,
+  //     }
 
-    case: ACTION.EVALUATE:
-      return {
-        ...state,
-      }
-  }
+  //   case: ACTION.EVALUATE:
+  //     return {
+  //       ...state,
+  //     }
+  // }
 
 }
 function App() {
