@@ -14,4 +14,27 @@ npm run eject
 _______________________
 generating a project using npx create-react-app
 * create  package.json 
-* 
+_______________________
+strict mode in react 
+_______________________
+creating react elements 
+_______________________
+ ReactDOM.createRoot() (v 18)
+ vs
+ ReactDOM.render()
+
+ https://dev.to/fromaline/reactdomcreateroot-reactdomrender-1jg6
+
+ function render(element, container, callback_function{}) {
+  // ...
+}
+gives back the same container with an element rendered inside it 
+
+
+_______________________
+public --> index.html:
+    <div id="root"></div>
+
+src --> index.js 
+    ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById('root'));
+

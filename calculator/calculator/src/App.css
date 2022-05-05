@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.calculator-grid {
+  display: grid;
+  margin-top: 2rem;
+  JUSTIFY-CONTENT: center;
+  grid-template-columns: repeat(4, 6rem);
+  /* first row is 7 rem & rest auto  */
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+
+/* select all buttons where the parent class is calculator-grid */
+.calculator-grid>button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+/* focus is trying to input or click */
+.calculator-grid>button:hover,
+.calculator-grid>button:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* makes the elements take 2 spaces in the grid */
+.span-two {
+  grid-column: span 2;
+}
+
+/* take all the grid for utput */
+.output {
+  grid-column: 1 / -1;
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  /* to push the values to the left */
+  align-items: flex-end;
+  /* to make them be on the utmost top and bottom */
+  /* justify-content: space-between; */
+  /* to make a space around them */
+  justify-content: space-around;
+  padding: 0.5rem;
+  /* wrapping and break to the next line*/
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+
+}

@@ -1,0 +1,15 @@
+Reduce in JS
+* perform a function for each value in an array
+Reduce in React
+* when an action happens, the reducer updates the state (look)
+
+___________________________________________
+spread and rest operators ES6
+* spread: on iterable object --> expand it with spread ...
+* rest: reduce a set of elements into one array
+* send ab object to a component, and get the values inside the component to different variables 
+
+https://www.geeksforgeeks.org/what-is-the-meaning-of-spread-operator-in-reactjs/
+
+___________________________________________
+Contiune: https://www.youtube.com/watch?v=DgRrrOt0Vr8 - 12:30 
