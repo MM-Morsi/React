@@ -1,0 +1,47 @@
+not using CDN 
+--------------
+* let the script go 
+* remove type="text/babel" from: <script src="index.js" type="text/babel"></script>
+* dependancies 
+    -- react
+    -- ReactDOM
+    this is through the npm / package.json 
+* you need to include react and reactDOm in the js 
+    import React from "react" // this is for the jsx 
+    import ReactDOM from "react-dom"
+
+NOTICE 
+* The react doesn't need to be imported after react 17 
+* import it anyways
+____________________________________
+dom append vs reactDOM.render()
+------------------------------
+// JSX
+const page = (
+    <div>
+        <h1>this is a heading one</h1>
+        <h2>this is a heading two</h2>
+        <h2>this is a heading two</h2>
+        <h2>this is a heading two</h2>
+    </div>
+)
+
+// 1) append() 
+let root = document.getElementById("root");
+root.append(page);
+
+// 2) stringfy 
+root.append(JSON.stringify(page));
+
+OUTPUT on page 
+--------------
+1) [object Object]
+
+to make the object appear:
+2) {"type":"div","key":null,"ref":null,"props":{"children":[{"type":"h1","key":null,"ref":null,"props":{"children":"this is a heading one"},"_owner":null,"_store":{}},{"type":"h2","key":null,"ref":null,"props":{"children":"this is a heading two"},"_owner":null,"_store":{}},{"type":"h2","key":null,"ref":null,"props":{"children":"this is a heading two"},"_owner":null,"_store":{}},{"type":"h2","key":null,"ref":null,"props":{"children":"this is a heading two"},"_owner":null,"_store":{}}]},"_owner":null,"_store":{}}
+
+RESULT
+------
+react takes the js objects and turns them to DOM elements 
+this is how we create static pages in react 
+____________________________________

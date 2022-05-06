@@ -21,6 +21,7 @@ React as CDN
 * pull babel 
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 compile down to js 
+<script src="index.js" type="text/babel"></script>pt
 ____________________________________
 ReactDOM.render()
 * declarative code 
@@ -114,3 +115,21 @@ OUTPUT
     _owner: null, 
     _store: {}
 }
+____________________________________
+Use () with JSX 
+// this is related to expressions --> functions more than this
+// this is an expression , no hoisting 
+// checl repl: https://replit.com/@mohamedmorsy6/One#function%20declaration%20vs%20expression/3-function%20expressions%20usage.js
+const navbar = (
+    <nav>
+        <h1>website</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+);
+const root = document.querySelector("#root");
+ReactDOM.render(navbar, root);
+____________________________________
